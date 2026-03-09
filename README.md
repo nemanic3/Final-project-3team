@@ -190,8 +190,8 @@ flower-neighborhood
 | 이름 | 역할 |
 |---|---|
 | 김건호 | Team Leader |
-| 정희원 | Developer |
 | 신성현 | Developer |
+| 정희원 | Developer |
 
 ---
 
