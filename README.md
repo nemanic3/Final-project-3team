@@ -3,88 +3,91 @@
 
 우리 동네 꽃집을 가장 쉽게 찾는 방법
 
-꽃동네는 사용자의 위치 정보를 기반으로 주변 꽃집과 소비자를 연결하는 모바일 기반 O2O 플랫폼입니다.
-소비자는 꽃다발, 꽃바구니 등 화훼 상품을 탐색 → 비교 → 주문 → 결제까지 하나의 플랫폼에서 해결할 수 있으며,
-판매자는 별도의 온라인 쇼핑몰 구축 없이도 자신의 꽃집과 상품을 효과적으로 홍보하고 판매할 수 있습니다.
+꽃동네는 위치 기반(Location-Based Service) 기술을 활용하여
+사용자 주변의 꽃집을 탐색하고 상품을 비교하며 주문까지 할 수 있는 O2O 플랫폼(Online to Offline Platform) 입니다.
 
-본 프로젝트는 위치 기반 서비스(GIS), REST API 설계, 관계형 데이터베이스 모델링, 생성형 AI 활용을 통해 실제 서비스 수준의 시스템 구현을 목표로 합니다.
+소비자는 하나의 플랫폼에서 꽃집 탐색 → 상품 확인 → 주문 및 결제까지 편리하게 이용할 수 있으며,
+판매자는 별도의 쇼핑몰이나 SNS 운영 부담 없이 상품 홍보와 주문 관리를 할 수 있습니다.
 
-📌 프로젝트 개요
+본 프로젝트는 GIS, RESTful API, Database Modeling, Generative AI 등 실제 서비스 수준의 기술을 활용하여 구현하는 것을 목표로 합니다.
+
+📌 Project Overview
 항목	내용
-프로젝트명	꽃동네 (Flower Neighborhood)
-프로젝트 유형	위치 기반 O2O 플랫폼
-개발 목적	지역 꽃집과 소비자를 연결하는 통합 플랫폼 구축
-대상 사용자	꽃을 구매하려는 소비자 / 지역 꽃집 판매자
+프로젝트 이름	꽃동네 (Flower Neighborhood)
+프로젝트 유형	Location-Based O2O Platform
+개발 목적	지역 꽃집과 소비자를 연결하는 플랫폼 구축
 개발 기간	2026 졸업 프로젝트
-플랫폼	Mobile App + Backend Server
-🚀 프로젝트 배경
+플랫폼	Mobile Application + Backend Server
+🧭 프로젝트 배경 (Background)
 
-화훼 상품을 구매할 때 소비자는 다음과 같은 과정을 거치는 경우가 많습니다.
+현재 꽃을 구매하려는 소비자는 다음과 같은 과정을 거칩니다.
 
-1️⃣ 인스타그램 / 블로그에서 꽃집 스타일 확인
-2️⃣ 지도 앱에서 위치 검색
-3️⃣ 전화 또는 카카오톡으로 가격 문의
-4️⃣ 예약 가능 여부 확인
+인스타그램 / 블로그에서 꽃집 스타일 확인
+
+지도 앱에서 매장 위치 검색
+
+전화 또는 카카오톡으로 가격 문의
+
+예약 가능 여부 확인
 
 이처럼 정보가 여러 플랫폼에 분산되어 있어 구매 과정이 비효율적입니다.
 
 또한 꽃집 판매자는
 
-자체 쇼핑몰 구축 비용
+온라인 쇼핑몰 구축 비용
 
-SNS 마케팅 관리 부담
+SNS 관리 부담
 
-온라인 판매 환경 구축 어려움
+디지털 판매 환경 부족
 
-등의 문제를 겪고 있습니다.
+과 같은 문제로 인해 온라인 판매 확장이 어려운 상황입니다.
 
-꽃동네는 이러한 문제를 해결하기 위해 기획되었습니다.
+꽃동네는 이러한 문제를 해결하기 위해 소비자와 판매자를 하나의 플랫폼에서 연결하는 서비스로 기획되었습니다.
 
-✨ 주요 기능
+✨ 주요 기능 (Key Features)
 📍 위치 기반 꽃집 탐색
 
-사용자 위치 기반 주변 꽃집 검색
+사용자의 위치 정보를 기반으로 주변 꽃집을 탐색할 수 있습니다.
 
-지도 기반 꽃집 위치 표시
+기능
+
+주변 꽃집 검색
+
+지도 기반 매장 위치 표시
 
 매장 운영 상태 확인
 
-판매 상품 정보 확인
+판매 상품 정보 조회
 
-사용 기술
+🌼 AI 기반 꽃 상품 미리보기
 
-GPS
+Generative AI를 활용하여 사용자가 원하는 스타일의 꽃 이미지를 생성합니다.
 
-GIS (지도 API)
+이를 통해 사용자는
 
-🌼 생성형 AI 상품 미리보기
+꽃 디자인 스타일 확인
 
-사용자의 취향과 구매 기록을 기반으로
-생성형 AI를 이용해 꽃다발 이미지를 생성합니다.
+구매 전 분위기 미리보기
 
-이를 통해 소비자는
+더 높은 구매 만족도
 
-원하는 스타일 확인
-
-구매 전 상품 분위기 파악
-
-만족도 높은 구매 경험
-
-을 할 수 있습니다.
+를 얻을 수 있습니다.
 
 🏪 판매자 SNS 기능
 
-꽃집 판매자는 앱 내에서
+꽃집 판매자는 플랫폼 내에서
 
-꽃 상품 사진 업로드
+상품 사진 업로드
 
-매장 홍보 포스팅
+홍보 게시글 작성
 
 브랜드 스타일 소개
 
-등의 SNS형 콘텐츠 기능을 사용할 수 있습니다.
+등의 SNS 형태의 홍보 기능을 사용할 수 있습니다.
 
 🛒 주문 및 결제 시스템
+
+플랫폼 내에서 다음 기능을 제공합니다.
 
 상품 주문
 
@@ -94,33 +97,29 @@ GIS (지도 API)
 
 예약 관리
 
-등을 통해 판매자는 온라인 판매 환경을 쉽게 운영할 수 있습니다.
+이를 통해 판매자는 별도의 쇼핑몰 없이도 온라인 판매 환경을 운영할 수 있습니다.
 
-🏗 시스템 아키텍처
-Mobile App (Flutter / React Native)
+🏗 System Architecture
+Mobile Application
         │
         │ REST API
         ▼
 Backend Server
-(Django / Spring / Node)
-        │
         │
         ▼
-Database
-(MySQL / PostgreSQL)
-
+Database (MySQL / PostgreSQL)
         │
         ▼
 External Services
-- 지도 API (GIS)
-- 결제 API
-- 생성형 AI API
-🛠 기술 스택
+- Map API (GIS)
+- Payment API
+- Generative AI
+🛠 Tech Stack
 Frontend
 
 Flutter / React Native
 
-지도 API
+Map API
 
 UI Framework
 
@@ -130,72 +129,60 @@ RESTful API
 
 Server Framework
 
-Authentication
-
 Database
 
 MySQL / PostgreSQL
 
-RDB 모델링
+Relational Database Modeling
 
 AI
 
 Generative AI Image Model
 
-사용자 취향 기반 이미지 생성
-
-기타
+Tools
 
 GitHub
 
-Docker (optional)
+Docker
 
 Cloud Server
 
-📂 프로젝트 구조 (예시)
-flower-town
+📂 Project Structure
+flower-neighborhood
 │
-├─ backend
-│   ├─ api
-│   ├─ models
-│   ├─ services
-│   └─ controllers
+├── backend
+│   ├── api
+│   ├── models
+│   ├── services
+│   └── controllers
 │
-├─ frontend
-│   ├─ screens
-│   ├─ components
-│   └─ assets
+├── frontend
+│   ├── screens
+│   ├── components
+│   └── assets
 │
-├─ docs
+├── docs
 │
-└─ README.md
-👥 팀원
-이름	역할	전공
-김건호	팀장	컴퓨터공학
-정희원	개발	컴퓨터공학
-신성현	개발	컴퓨터공학
-🎯 기대 효과
+└── README.md
+👥 Team
+이름	역할
+김건호	Team Leader
+정희원	Developer
+신성현	Developer
+🎯 기대 효과 (Expected Outcomes)
 
-본 프로젝트를 통해 다음과 같은 역량을 향상시킬 수 있습니다.
+본 프로젝트를 통해 다음과 같은 역량을 습득할 수 있습니다.
 
-위치 기반 서비스(GIS) 구현 경험
+Location-Based Service 구현 경험
 
 RESTful API 설계 및 개발
 
 관계형 데이터베이스 모델링
 
-생성형 AI 모델 활용 경험
+Generative AI 활용 경험
 
-실제 서비스 수준의 시스템 설계 경험
+실제 서비스 수준의 시스템 아키텍처 설계
 
 또한 지역 꽃집과 소비자를 연결하는 플랫폼을 통해 로컬 화훼 시장 활성화에 기여하는 것을 목표로 합니다.
 
-📌 향후 확장 가능성
-
-꽃 정기 구독 서비스
-
-AI 기반 꽃 추천 시스템
-
-이벤트 / 기념일 자동 추천
-
-지역 기반 꽃 배달 서비스
+💡 Flower Neighborhood — Connecting local flower shops with customers.
