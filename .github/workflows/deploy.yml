@@ -1,0 +1,29 @@
+name: Deploy Django Backend to EC2
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~
+            if [ ! -d "kkotdongnae-backend" ]; then
+              git clone https://github.com/DevITKR/kkotdongnae-backend.git kkotdongnae-backend
+            fi
+            cd kkotdongnae-backend
+            git pull origin main
+            docker compose down || true
+            docker compose up -d --build
